@@ -3,24 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Welcome Zhanar Seitzhan 5a1606 from Introduction to Programming
-    </title>
+    <title>Yoga Classes</title>
 
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
+    <!-- navbar-fixed-top -->
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <div class="navbar-header">
+        <div id="navbar-box" class="navbar-header">
           <button
             type="button"
+            id="nav-toggle-button"
             class="navbar-toggle"
             data-toggle="collapse"
             data-target="#myNavbar"
@@ -29,38 +34,46 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Janar</a>
+          <a class="navbar-brand navbar-center" href="brand.html"
+            ><img src="images/logo.png" alt="logo" id="logo-pic"
+          /></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="edu.html">Edu</a></li>
+            <li><a href="hub.html">Hub</a></li>
             <!-- <li><a href="#">Page 3</a></li> -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li>
+            
+            <!-- <li>
               <a href="#"><span class="glyphicon glyphicon-user"></span></a>
             </li>
             <li>
-              <a href="#"
-                ><span class="glyphicon glyphicon-log-in"></span> Login</a
-              >
+              <a href="#"><span class="glyphicon glyphicon-log-in"></span></a>
+            </li> -->
+            <li>
+              <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
             </li>
             <li>
-              <a href="#"
-                ><span class="glyphicon glyphicon-shopping-cart"></span
-              ></a>
+              <a href="#"><i class="fa fa-whatsapp fa-lg"></i></a>
             </li>
+            <li><a><div class="center">
+                <button type="button" class="btn btn-info">Sign Up</button>
+              </div></a></li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- <div >
+        <img id="background-img" src="images/background.jpg" alt="background" />
+    </div> -->
     <div class="container">
-      <h1>My First Bootstrap Page</h1>
+      <h2>My First Bootstrap Page</h1>
       <p>This is some text.</p>
 
-      <h1>Introduction to PHP Course</h1>
+      <!-- <h2>Introduction to PHP Course</h1> -->
       <ul>
         <li>
           <p>
@@ -101,7 +114,7 @@
         Please feel free to contact out Program Manager <em>Dr. Seitzhan</em> if
         you have any questions about the course content and arrangements.
       </div>
-      <p>
+      <p class="big-text">
         Web development is an evolving amalgamation of languages that work in
         concert to receive, modify, and deliver information between parties
         using the Internet as a mechanism of delivery. While it is easy to
